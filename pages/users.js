@@ -1,25 +1,13 @@
-export default function users({ users }) {
+export default function Blog({ users }) {
     return (
-      <div>
+      <>
       <h1>Employee List</h1>
-      <table>
-        <tr>
-          <th><p>Name</p></th>
-          <th><p>Email</p></th>
-          <th><p>Mobile</p></th>
-        </tr>
-        <tbody>
+      <ul>
         {users.map((users) => (
-          <tr>
-            <td><p>{users.EMP_Name}</p></td>
-            <td><p>{users.EMP_Email}</p></td>
-            <td><p>{users.EMP_MobileNumber}</p></td>
-          </tr>
+          <li>{users.EMP_Name}</li>
         ))}
-        </tbody>
-      </table>
-      
-      </div>
+      </ul>
+      </>
       
     )
   }
