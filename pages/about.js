@@ -1,3 +1,9 @@
+import Link from "next/link";
+
 export default function About() {
-    return <div>About</div>
+    return <div>
+
+        <h1>About</h1>
+        <Link href="/">Back</Link>
+        </div>
 }

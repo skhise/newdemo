@@ -1,10 +1,13 @@
+import Link from "next/link";
+
 export default function Blog({ users }) {
     return (
       <>
       <h1>Employee List</h1>
+      <Link href="/">Back</Link>
       <ul>
         {users.map((users) => (
-          <li>{users.EMP_Name}</li>
+          <li key={users.EMP_ID}>{users.EMP_Name}</li>
         ))}
       </ul>
       </>
